@@ -265,7 +265,35 @@
     margin:0 auto
   }
 }
-  /* REPEATABLE PATTERNS */
+.about__home .about_home__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  display:flex;
+  flex-direction:row-reverse;
+  gap:12rem;
+  align-items:center;
+}
+.about__home .about_home__wrapper .about__text h5{
+  color:#ffa700;
+  font-size:2rem;
+  font-weight:600;
+  margin-bottom:3rem
+}
+.about__home .about_home__wrapper .about__text p{
+  margin-bottom:2rem;
+  text-align:justify;
+}
+@media screen and (max-width:500px){
+  .about__home{
+    padding-left:2rem;
+    padding-right:2rem;
+    
+  }
+}
+
+
+
+/* REPEATABLE PATTERNS */
   .btn{
     display:inline-block;
     padding:1.5rem 2rem;

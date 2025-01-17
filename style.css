@@ -265,29 +265,47 @@
     margin:0 auto
   }
 }
+/* ABOUT HOME */
+.about__home{
+  padding-top: 13rem;
+  padding-bottom:5rem;
+  background: #ffffff;
+}
 .about__home .about_home__wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
-  display:flex;
-  flex-direction:row-reverse;
   gap:12rem;
   align-items:center;
 }
-.about__home .about_home__wrapper .about__text h5{
+.about__home .about_home__wrapper .about_home__text h5{
   color:#ffa700;
   font-size:2rem;
   font-weight:600;
-  margin-bottom:3rem
+  margin-bottom:5rem
 }
-.about__home .about_home__wrapper .about__text p{
-  margin-bottom:2rem;
+.about__home .about_home__wrapper .about_home__text p{
+  margin-bottom:3rem;
   text-align:justify;
 }
+
 @media screen and (max-width:500px){
   .about__home{
     padding-left:2rem;
     padding-right:2rem;
-    
+  }
+  .about__home .about_home__wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  .about__home .about_home__wrapper .about_home__text h5{
+    text-align:center;
+    padding-top: 1rem;
+  }
+  .about__home img{
+    width:20rem;
+    margin:0 auto;
+    padding-bottom:2.5rem;
   }
 }
 

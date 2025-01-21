@@ -610,6 +610,68 @@ padding-bottom: 3rem;
 }
 
 /* SERVICES PAGE */
+.serviceItem {
+  padding-top: 13rem;
+  max-width: 200rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.serviceItem .service__wrapper {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  gap: 10rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  text-align: left;
+}
+.serviceItem .service__text h1 {
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+.serviceItem .service__text p {
+  text-align: justify;
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+.serviceItem .service__text h4 {
+  font-size: 3rem;
+  color: #ffa700;
+  font-weight: 550;
+}
+.serviceItem .service__text p span {
+  font-style: italic;
+}
+.serviceItem i {
+  font-size: 5rem;
+  color: #ffa700;
+  padding-top: 5rem;
+  padding-bottom:5rem;
+}
+ .serviceItem:nth-child(even){
+  color: #ffffff;
+ }
+
+.serviceItem:nth-child(even) {
+  background-color: #2b2b2b;
+}
+
+.serviceItem:nth-child(even) .service__wrapper {
+  flex-direction: row-reverse;
+}
+.serviceItem:nth-child(3){
+  padding-bottom:3rem;
+}
+.serviceItem:last-child i{
+  display: none;
+}
+.serviceItem:nth-child(4){
+  display: none;
+}
+
+/* UPDATES PAGE */
 .updates{
   padding-top:13rem;
   padding-bottom:5rem;
@@ -689,6 +751,7 @@ padding-bottom: 3rem;
 .updates .recent__card p{
   padding-bottom:0rem;
 }
+
 
 /* REPEATABLE PATTERNS */
 .btn{

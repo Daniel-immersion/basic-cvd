@@ -440,6 +440,7 @@ font-size: 2.5rem;
   }
   .footer .footer__wrapper{
     padding:1rem;
+    padding:2rem;
   }
   .footer .footer__wrapper{
     display:grid;
@@ -705,7 +706,7 @@ display: none;
 }
 /* UPDATES PAGE */
 .updates{
-  padding-top:13rem;
+  padding-top:15rem;
   padding-bottom:5rem;
   background:#ffffff;
 }
@@ -753,7 +754,7 @@ display: none;
 .updates .updates__category {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left:6rem;
+  margin-left:3rem;
   margin-bottom:30px;
   padding-bottom: 5rem;
   border-bottom: 1px solid lightgrey;
@@ -762,21 +763,23 @@ display: none;
   color:#ffa700;
   font-size:2rem;
   font-weight:600;
+  margin-bottom:1.5rem;
 }
 .updates .updates__category .name p{
   padding: 1rem;
+  padding-top: 2rem;
 }
 .updates .updates__category .number p{
-  padding:1rem;
+  padding:1.45rem;
   display: flex;
   justify-content: end;
 }
-.updates .updates__category .number{
-  padding-top:2.8rem;
+.updates .updates__category .number {
+  padding-top:5rem;
 }
 .updates .updates__recent{
   padding-bottom:8rem;
-  margin-left:6rem;
+  margin-left:3rem;
   border-bottom: 1px solid lightgrey;
 }
 .updates .recent__card{
@@ -816,7 +819,6 @@ display: none;
   color:#2b2b2b;
   background: #ffffff;
   border:1.5px solid #2b2b2b;
-  margin-left:3rem;
   margin-bottom:1.5rem;
 }
 .updates .updates__buttons .btn:hover{
@@ -824,11 +826,94 @@ display: none;
   color:#ffffff;
 }
 
+
+@media screen and (max-width:500px){
+  .updates .updates__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding:0 2rem;
+  }
+  .updates .updates__title{
+    text-align: center;
+  }
+  /* .updates{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+  .updates .updates__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .updates .updates__item{
+    margin-bottom:0rem;
+  }
+  .updates .updates__item ul {
+    font-size: 1.5rem;
+  }
+  .updates .updates__item ul p{
+    font-size: 1.2rem;
+  }
+  .updates .updates__category {
+    padding-left:0rem;
+    margin-left: 0rem;
+  }
+  .updates .updates__recent{
+    margin-left: 0rem;
+  }
+  .updates .updates__recent h5{
+    padding-left: 0rem;
+    margin-top:6rem;
+  }
+  .updates .recent__card{
+    padding-left:0rem;
+  }
+  .updates .updates__buttons h5{
+    margin-top:6rem;
+  }
+  .updates .updates__buttons{
+    margin-left: 0rem;
+  }
+  .updates .updates__item:last-child{
+    border-bottom: 1px solid lightgray;
+  } */
+}
+
 /* CONTACT PAGE */
+.header__contact{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .contact{
+  border-bottom: 1px solid lightgray;
   padding-top:13rem;
-  padding-bottom:15.5rem;
   background:#2b2b2b;
+
+}
+.contact__info input,
+.contact__info textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #2b2b2b;
+  font-size: 12px;
+  resize: none;
+}
+.contact__info form button{
+  padding: 15px 20px;
+  background-color: #ffa700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+}
+.contact__info form button:hover{
+  scale: 1.1;
+}
+.contact__info form{
+  text-align: end;
 }
 .contact .contact__wrapper{
   display: grid;
@@ -841,7 +926,6 @@ display: none;
 }.contact .contact__item2{
   display: grid;
   grid-template-columns: 0.1fr 0.6fr;
-  margin-top:6rem;
 }
 .contact .contact__title h6{
   color:#ffffff;
@@ -849,7 +933,7 @@ display: none;
 }
 .contact .contact__item2 p{
   color:#ffffff;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 .contact .contact__text ul li i{
   color:#ffa700;
@@ -885,9 +969,49 @@ display: none;
 .contact ul li{
   padding-top: 3rem;
 }
+@media screen and (max-width:500px){
+  .contact{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .contact .contact__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact .contact__item{
+    display: flex;
+    justify-content: center;
+  }
+  .contact .contact__item2{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+  }
+  .contact .contact__info{
+    margin-top:6rem;
+  }
+  .contact .contact__info .btn{
+    margin-left:22rem;
+  }
+}
 
 
 /* REPEATABLE PATTERNS */
+.backToTop{
+  position:fixed;
+  z-index:999;
+  bottom:5rem;
+  right:5rem;
+  display:none;
+}
+.backToTop.open{
+  display:block;
+}
+.backToTop a{
+  background:#ffa700;
+  padding:1rem;
+  border-radius:5rem;
+  color:#2b2b2b;
+}
 .btn{
   display:inline-block;
   padding:1.5rem 2rem;
